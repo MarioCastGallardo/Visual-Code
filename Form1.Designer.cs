@@ -1,4 +1,4 @@
-﻿namespace Gif.Animado
+﻿namespace Practica_1
 {
     partial class Form1
     {
@@ -28,40 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Gif_Animado = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Gif_Animado)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Gif_Animado
-            // 
-            this.Gif_Animado.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Gif_Animado.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Gif_Animado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Gif_Animado.Image = global::Gif.Animado.Properties.Resources.orange_cat_laughing;
-            this.Gif_Animado.Location = new System.Drawing.Point(-7, 0);
-            this.Gif_Animado.Name = "Gif_Animado";
-            this.Gif_Animado.Size = new System.Drawing.Size(828, 452);
-            this.Gif_Animado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Gif_Animado.TabIndex = 0;
-            this.Gif_Animado.TabStop = false;
-            this.Gif_Animado.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 451);
-            this.Controls.Add(this.Gif_Animado);
+            this.BackColor = System.Drawing.Color.Yellow;
+            this.BackgroundImage = global::Practica_1.Properties.Resources.orange_cat_laughing;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.Gif_Animado)).EndInit();
+            this.Text = "Gif Animado";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox Gif_Animado;
     }
 }
 
