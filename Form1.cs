@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Programacion_act__6
+namespace Programacion_act_7
 {
     public partial class Form1 : Form
     {
@@ -17,19 +17,44 @@ namespace Programacion_act__6
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-         float valor1= float.Parse(textBox1.Text);
+            double v1, farh1;
+            v1 = double.Parse(Valor.Text);
+            farh1 = (v1 * 9.0 / 5.0) + 32.0;  
+            Resultado.Text= farh1.ToString();
+            label2.Text = "Fahrenheit";
 
-         float valor2 = float.Parse(textBox2.Text);
-         float valor3= valor1 * valor2 /2;
+        }
 
-         textBox3.Text = valor3.ToString();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double v1, cent1;
+            v1 = double.Parse(Valor.Text);
+            cent1 = (v1 - 32.0) * (5.0 / 9.0);
+            Resultado.Text = cent1.ToString();
+            label2.Text = "Centrigados";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Valor.Text = "";
+            Resultado.Text = "Resultado";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
