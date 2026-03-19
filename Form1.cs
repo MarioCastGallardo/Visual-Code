@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Practica___4
+namespace Practica__3
 {
     public partial class Form1 : Form
     {
@@ -17,37 +17,27 @@ namespace Practica___4
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a,b,c,d;
+            int num1 = Int32.Parse(textBox1.Text);
+            int num2 = Int32.Parse(textBox2.Text);
 
-            a= int.Parse(textBox1.Text);    
-            b= int.Parse(textBox2.Text);
-            c= int.Parse(textBox3.Text);
-            d= int.Parse(textBox4.Text);
+            int sum = num1 + num2;
 
-           textBox5.Text= d.ToString();
-           textBox6.Text= c.ToString();  
-           textBox7.Text = b.ToString();
-           textBox8.Text = a.ToString();
+            label3.Text = "Sum=" + sum;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
