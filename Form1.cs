@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Practica___5
+namespace Practica___4
 {
     public partial class Form1 : Form
     {
@@ -17,37 +17,37 @@ namespace Practica___5
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double Radius, Height;
-            double BaseArea, LateralArea, TotalArea;
-            double Volume;
+            int a,b,c,d;
 
-            Radius = double.Parse(textBox1.Text);
-            Height = double.Parse(textBox2.Text);
+            a= int.Parse(textBox1.Text);    
+            b= int.Parse(textBox2.Text);
+            c= int.Parse(textBox3.Text);
+            d= int.Parse(textBox4.Text);
 
-            BaseArea = Radius * Radius * Math.PI;
-            LateralArea = 2 * Math.PI * Radius * Height;
-            TotalArea = 2 * Math.PI * Radius * (Height + Radius);
-            Volume = Math.PI * Radius * Radius * Height;
-
-            textBox3.Text = BaseArea.ToString("0.##");
-            textBox4.Text = LateralArea.ToString("0.##");
-            textBox5.Text = TotalArea.ToString("0.##");
-            textBox6.Text = Volume.ToString("0.##");
+           textBox5.Text= d.ToString();
+           textBox6.Text= c.ToString();  
+           textBox7.Text = b.ToString();
+           textBox8.Text = a.ToString();
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
